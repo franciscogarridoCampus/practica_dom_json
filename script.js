@@ -16,3 +16,6 @@ for(let i=0;i < clase_texto.length;i++){
 let caja=document.querySelector('.caja');
 caja.style.border= '3px solid black';
 caja.style.backgroundColor='#1ce615ff';
+
+//Ejercicio 4
+let botones=document.querySelectorAll()
