@@ -18,4 +18,52 @@ caja.style.border= '3px solid black';
 caja.style.backgroundColor='#1ce615ff';
 
 //Ejercicio 4
-let botones=document.querySelectorAll()
+let botones=document.querySelectorAll('.btn-dom');
+
+botones.forEach(function(boton) {
+    boton.addEventListener('click', function() {
+        boton.textContent = 'DOM listo';
+    });
+});
+
+//Ejercicio 5
+let vivos= document.getElementsByTagName('li');
+let estaticos=document.querySelectorAll('li');
+console.log("Vivos:"+vivos.length);
+console.log("Estaticos:"+estaticos.length);
+
+//Creamos nuevo apartado en la lista y la incluimos con appenchild y al hacerlo aumenta los vivos y no los estaticos porque no se añadio directamente en el html
+let nuevo = document.createElement('li');
+nuevo.textContent = "Buenas";
+document.getElementById('lista').appendChild(nuevo);
+console.log("Vivos despues de agregar un elemento nuevo con appenchild:"+vivos.length);
+console.log("Estaticos despues de agregar un elemento nuevo con appenchild:"+estaticos.length);
+//Ejercicio 6
+
+//Ejercicio 7
+
+//Ejercicio 8
+
+//Ejercicio 9
+
+//Ejercicio 10
+
+//Ejercicio 11
+
+//Ejercicio 12
+
+//Ejercicio 13
+
+//Ejercicio 14
+
+//Ejercicio 15
+
+//Ejercicio 16
+
+//Ejercicio 17
+
+//Ejercicio 18
+
+//Ejercicio 19
+
+//Ejercicio 20
