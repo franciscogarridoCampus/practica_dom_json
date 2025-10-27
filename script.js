@@ -50,7 +50,7 @@ console.log("Estaticos despues de agregar un elemento nuevo con appenchild:"+est
 
 //Ejercicio 11
 
-//Ejercicio 12
+//Ejercicio 12, No podemos hacerlo porque no dimos ese comando
 
 //Ejercicio 13
 
