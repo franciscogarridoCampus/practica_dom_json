@@ -56,9 +56,61 @@ imagen.setAttribute('src', 'https://images.ctfassets.net/denf86kkcx7r/2KGI03JSLC
 
 document.body.appendChild(imagen);
 //Ejercicio 9
+const container = document.getElementById('card-container'); 
+
+const card = document.createElement('div');
+card.className = 'card';
+card.style.width = '18rem';
+
+const cardBody = document.createElement('div');
+cardBody.className = 'card-body';
+
+const title = document.createElement('h5');
+title.className = 'card-title';
+title.textContent = 'Título de la tarjeta';
+
+const text = document.createElement('p');
+text.className = 'card-text';
+text.textContent = 'Hola desde la tarjeta.';
+
+const button = document.createElement('button');
+button.className = 'btn btn-primary';
+button.textContent = 'Botón';
+
+cardBody.appendChild(title);
+cardBody.appendChild(text);
+cardBody.appendChild(button);
+
+card.appendChild(cardBody);
+container.appendChild(card);
 
 //Ejercicio 10
+const listaEj10 = document.getElementById('lista-ej10');
 
+
+const item1 = document.createElement('li');
+item1.className = 'list-group-item';
+item1.textContent = 'Elemento al final';
+
+const item2 = document.createElement('li');
+item2.className = 'list-group-item';
+item2.textContent = 'Elemento al inicio';
+
+const fueraAntes = document.createElement('p');
+fueraAntes.textContent = 'Esto va antes de la lista';
+
+const fueraDespues = document.createElement('p');
+fueraDespues.textContent = 'Esto va después de la lista';
+
+// Añadir al final
+listaEj10.append(item1);
+
+// Añadir al inicio
+listaEj10.prepend(item2);
+
+// Añadir fuera de la lista
+listaEj10.before(fueraAntes);
+listaEj10.after(fueraDespues);
 //Ejercicio 11
 
 //Ejercicio 12, No podemos hacerlo porque no dimos ese comando
