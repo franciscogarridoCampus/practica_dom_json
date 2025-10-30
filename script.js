@@ -38,12 +38,23 @@ nuevo.textContent = "Buenas";
 document.getElementById('lista').appendChild(nuevo);
 console.log("Vivos despues de agregar un elemento nuevo con appenchild:"+vivos.length);
 console.log("Estaticos despues de agregar un elemento nuevo con appenchild:"+estaticos.length);
+
 //Ejercicio 6
+let dinamico= document.createElement('p');
+dinamico.textContent='Creado dinamicamente';
+document.body.appendChild(dinamico);
 
 //Ejercicio 7
+let contenedor = document.getElementById('contenedor');
+let textNodo = document.createTextNode('Texto con createTextNode()');
+contenedor.appendChild(textNodo);
 
 //Ejercicio 8
+let imagen = document.createElement('img'); 
 
+imagen.setAttribute('src', 'https://images.ctfassets.net/denf86kkcx7r/2KGI03JSLCerDS7RD20OZP/b85317da255ed7119430759308414a49/perros_de_pastor_y_boyeros_-_1.jpg?fm=webp&w=612'); 
+
+document.body.appendChild(imagen);
 //Ejercicio 9
 
 //Ejercicio 10
