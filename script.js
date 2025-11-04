@@ -111,13 +111,60 @@ listaEj10.prepend(item2);
 // Añadir fuera de la lista
 listaEj10.before(fueraAntes);
 listaEj10.after(fueraDespues);
+
 //Ejercicio 11
+
+const parrafoeliminar = document.getElementById('borrador');
+const botondeEliminar = document.getElementById('borrarParrafo');
+const botondeReemplazar = document.getElementById('reemplazar');
+
+
+botondeEliminar.addEventListener('click', () => {
+    parrafoeliminar.remove();
+    console.log('El párrafo  eliminado');
+});
+
+
+botondeReemplazar.addEventListener('click', () => {
+    const nuevoParrafo = document.createElement('p');
+    nuevoParrafo.textContent = 'Este es el nuevo párrafo que lo ha reemplazado';
+
+    parrafoeliminar.replaceWith(nuevoParrafo);
+    console.log('El párrafo  reemplazado');
+});
 
 //Ejercicio 12, No podemos hacerlo porque no dimos ese comando
 
 //Ejercicio 13
+botonEj13.textContent = 'Agregar elemento';
+botonEj13.className = 'btn btn-success mt-2'; // Bootstrap para estilo
+document.body.appendChild(botonEj13); // Lo añadimos al body
 
+// Contador para numerar los elementos
+let contador = listaEj13.children.length + 1;
+
+// Evento click del botón
+botonEj13.addEventListener('click', () => {
+    // Crear un nuevo <li>
+    const nuevoLi = document.createElement('li');
+    nuevoLi.textContent = `Elemento ${contador}`;
+    
+    // Añadir el <li> a la lista
+   listaEj13.appendChild(nuevoLi);
+    
+    // Incrementar contador
+    contador++;
+    });
 //Ejercicio 14
+const botonEliminar=document.getElementById('eliminarElemento');
+botonEliminar.addEventListener('click', () => {
+    if (listaEj13.lastElementChild) {
+        listaEj13.lastElementChild.remove();
+        console.log('Último elemento eliminado');
+    } else {
+        console.log('No hay elementos para eliminar');
+    }
+});
 
 //Ejercicio 15
 
