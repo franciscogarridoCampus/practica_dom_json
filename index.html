@@ -1,83 +1,102 @@
-
 <html>
 
-<!--Estos 2 links son para el bootstrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<head>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-<body>
-    <!--Ejercicio1-->
+<body class="container mt-4">
+    
+    <h2>Ejercicio 1</h2>
     <h1 id="Titulo">Titulo</h1>
-    <p >Parrafo</p>
-    <!--Ejercicio2-->
-        <!--Si hubiera hecho el class en un div los parrafos estarian mas juntos que ahora-->
-        <p class="texto">Primer parrafo de la clase texto</p>
-        <p class="texto">Segundo parrafo de la clase texto</p>
-        <p class="texto">Tercer parrafo de la clase texto</p>
-    
-    <!--Ejercicio3-->
-        <div class="caja">
-            <p>Contenido de la caja</p>
-        </div>
-    
-    <!--Ejercicio4-->
-    <button class="btn-dom">Haz Click</button>
-    <button class="btn-dom">Haz Click</button>
-    <button class="btn-dom">Haz Click</button>
+    <p>Parrafo</p>
 
-    <!--Ejercicio5-->
+    <h2>Ejercicio 2</h2>
+    <p class="texto">Primer parrafo de la clase texto</p>
+    <p class="texto">Segundo parrafo de la clase texto</p>
+    <p class="texto">Tercer parrafo de la clase texto</p>
+
+    <h2>Ejercicio 3</h2>
+    <div class="caja"><p>Contenido de la caja</p></div>
+
+    <h2>Ejercicio 4</h2>
+    <button class="btn-dom btn btn-info">Haz Click</button>
+    <button class="btn-dom btn btn-info">Haz Click</button>
+    <button class="btn-dom btn btn-info">Haz Click</button>
+
+    <h2>Ejercicio 5</h2>
     <ul id="lista">
         <li>Hola</li>
         <li>Adios</li>
     </ul>
 
-    <!--Ejercicio6 no hace falta hacer nada en el html-->
-    
-    <!--Ejercicio7-->
-<div id="contenedor"></div>
-    <!--Ejercicio8no hace falta hacer nada en el html-->
+    <h2>Ejercicio 6</h2>
+    <p>(Crea un elemento dinámicamente con JS)</p>
 
-    <!--Ejercicio9-->
-    <div class="container mt-5" id="card-container">
-       
+    <h2>Ejercicio 7</h2>
+    <div id="contenedor"></div>
+
+    <h2>Ejercicio 8</h2>
+
+    <h2>Ejercicio 9</h2>
+    <div class="container mt-3" id="card-container"></div>
+
+    <h2>Ejercicio 10</h2>
+    <ul id="lista-ej10" class="list-group"></ul>
+
+    <h2>Ejercicio 11</h2>
+    <p id="borrador">Para eliminar</p>
+    <button id="borrarParrafo" class="btn btn-danger">Eliminar párrafo</button>
+    <button id="reemplazar" class="btn btn-warning">Reemplazar párrafo</button>
+
+    <h2>Ejercicio 12</h2>
+   <div id="ej12-container" class="row g-3">
+    <div id="tarjeta-original" class="card col-3">
+        <img src="https://images.ctfassets.net/denf86kkcx7r/2KGI03JSLCerDS7RD20OZP/b85317da255ed7119430759308414a49/perros_de_pastor_y_boyeros_-_1.jpg" class="card-img-top" alt="Perro">
+        <div class="card-body">
+            <h5 class="card-title">Tarjeta Original</h5>
+            <p class="card-text">Texto original de la tarjeta.</p>
+        </div>
     </div>
-    <!--Ejercicio10-->
-<div class="container mt-3" id="ej10-container">
-    <ul id="lista-ej10" class="list-group">
-
-    </ul>
+    <button id="clonar-tarjeta" class="btn btn-primary align-self-start">Clonar tarjeta</button>
 </div>
-    <!--Ejercicio11-->
-<p id="borrador">Para eliminar</p>
-<button id="borrarParrafo">Pulsa para eliminar el parrafo</button>
-<button id="reemplazar">Pulsa para para reemplazar</button>
-
-    <!--Ejercicio12, No podemos hacerlo porque no dimos ese comando-->
 
 
-    <!--Ejercicio13-->
-<button id="botonEj13"></button>
-<ul id="listaEj13">
-    <li>HolaEj13</li>
-</ul>
+    <h2>Ejercicio 13</h2>
+    <button id="botonEj13" class="btn btn-success">Agregar elemento</button>
+    <ul id="listaEj13">
+        <li>HolaEj13</li>
+    </ul>
 
-    <!--Ejercicio14-->
-<button id="eliminarElemento">Eliminar último elemento de la lista de Ej13</button>
-    <!--Ejercicio15-->
+    <h2>Ejercicio 14</h2>
+    <button id="eliminarElemento" class="btn btn-danger">Eliminar último elemento</button>
 
-    <!--Ejercicio16-->
+    <h2>Ejercicio 15</h2>
+<div class="container mt-2">
+    <p class="item">Texto original</p>
+    <p class="item">Texto original</p>
+    <p class="item">Texto original</p>
+</div>
 
-    <!--Ejercicio17-->
 
-    <!--Ejercicio18-->
 
-    <!--Ejercicio19-->
+    <h2>Ejercicio 16</h2>
+    <div id="galeria" class="row g-3"></div>
 
-    <!--Ejercicio20-->
+    <h2>Ejercicio 17</h2>
+
+
+
+    <h2>Ejercicio 18</h2>
+
+
+    <h2>Ejercicio 19</h2>
+
+
+    <h2>Ejercicio 20</h2>
+
+
+    <script src="script.js"></script>
 </body>
-
-
-
-<!--Este es script de archivo-->
-<script src="script.js"></script>
 </html>
