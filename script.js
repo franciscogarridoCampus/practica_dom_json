@@ -133,8 +133,22 @@ botondeReemplazar.addEventListener('click', () => {
     console.log('El párrafo  reemplazado');
 });
 
-//Ejercicio 12, No podemos hacerlo porque no dimos ese comando
+//Ejercicio 12,
+const btnClonarTarjeta = document.getElementById("clonar-tarjeta");
+const contenedorEj12 = document.getElementById("ej12-container");
+const tarjetaOriginal = document.getElementById("tarjeta-original");
 
+btnClonarTarjeta.addEventListener("click", () => {
+    // Clonamos la tarjeta
+    const clon = tarjetaOriginal.cloneNode(true);
+
+    // Cambiamos el texto del clon
+    clon.querySelector(".card-title").textContent = "Tarjeta Clonada";
+    clon.querySelector(".card-text").textContent = "Este es el clon de la tarjeta original.";
+
+    // Insertamos el clon antes del botón
+    contenedorEj12.insertBefore(clon, btnClonarTarjeta);
+});
 //Ejercicio 13
 botonEj13.textContent = 'Agregar elemento';
 botonEj13.className = 'btn btn-success mt-2'; // Bootstrap para estilo
@@ -167,13 +181,37 @@ botonEliminar.addEventListener('click', () => {
 });
 
 //Ejercicio 15
+const items = document.querySelectorAll(".item");
+
+items.forEach((item, index) => {
+    item.textContent = `Elemento ${index + 1}`;
+});
 
 //Ejercicio 16
+const imagenes = [
+    { titulo: "Montaña", url: "https://concepto.de/wp-content/uploads/2018/08/Picos-de-montana.jpg" },
+    { titulo: "Lago", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Llao_Llao_Peninsula.jpg/1200px-Llao_Llao_Peninsula.jpg" },
+    { titulo: "Bosque", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Grib_skov.jpg/1200px-Grib_skov.jpg" }
+];
+
+const galeria = document.getElementById("galeria");
+
+imagenes.forEach(img => {
+    galeria.innerHTML += `
+        <div class="card col-3">
+            <img src="${img.url}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">${img.titulo}</h5>
+            </div>
+        </div>`;
+});
 
 //Ejercicio 17
 
 //Ejercicio 18
 
+
 //Ejercicio 19
+
 
 //Ejercicio 20
